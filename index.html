@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percent</title>
+    <script defer src="index.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            text-align: center;
+            color: white;
+            background-color: #1e2235;
+        }
+        input{
+            margin-bottom: 3em;
+            border-radius: 35px;
+            padding: 0.3em;
+        }
+        .conteiner{
+            margin: 50px auto;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+        p{
+            font-size: 30px;
+        }
+        button{
+            padding: 0.3em;
+            border-radius: 35px;
+        }
+        button:hover{
+            background-color: rgb(233, 220, 220);
+        }
+        button:active{
+            background-color: aliceblue;
+        }
+        h1{
+            margin-bottom: 2em;
+            font-weight: bold;
+            background: linear-gradient(to right, rgb(255, 102, 0), rgb(255, 81, 0), rgb(247, 202, 2));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <h1>Calculadora de porcentagem</h1>
+        <h3>Porcentagem</h3>
+        <input id="entrada1" type="number" placeholder="Digite a porcentagem">
+        <h3>Valor</h3>
+        <input id="entrada2" placeholder="Digite o valor" type="Number">
+        <button onclick="calcular()">Enviar</button>
+        <p id="saida" ></p>
+    </div>
+</body>
+</html>
